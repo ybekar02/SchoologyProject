@@ -12,7 +12,23 @@ import java.time.format.DateTimeFormatter;
 
 public class SchoologyUtils {
 
+    private static String usernameLocator = "edit-mail";
+    private static String passwordLocator = "edit-pass";
 
+
+    /**
+     * Login into vytrack application
+     * @param driver
+     * @param username
+     * @param password
+     */
+    public static void login(String username, String password){
+        Driver.getDriver().get("https://app.schoology.com/login");
+        Driver.getDriver().findElement(By.id(usernameLocator)).sendKeys(username);
+        //Keys.ENTER means click enter after entering password
+        //in this way, we don't need to click login button
+        Driver.getDriver().findElement(By.id(passwordLocator)).sendKeys(password, Keys.ENTER);
+    }
 
     /**
      * Performs a pause

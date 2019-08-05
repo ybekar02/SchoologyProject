@@ -42,7 +42,8 @@ public class EventTest extends TestBase {
         eventPage.bodyElement.sendKeys("Dear students, make sure to check your assignment on the announcement page!");
         Driver.getDriver().switchTo().parentFrame();
         rsvp();
-        eventPage.optionsElement.isEnabled();
+        System.out.println(eventPage.optionsElement.isEnabled());
+        Assert.assertTrue(eventPage.optionsElement.isEnabled());
         eventPage.searchButtonElement.click();
         eventPage.section2CheckBoxElement.click();
         eventPage.selectButtonElement.click();
@@ -63,18 +64,19 @@ public class EventTest extends TestBase {
     public void day(){
         WebElement table = Driver.getDriver().findElement(By.cssSelector("table[class='ui-datepicker']"));
         int num = table.findElements(By.xpath("//td[contains(@class,'ui-datepicker-days-cell')]")).size();
-        for(int i=0; i< num; i++){
-            String day = table.findElements(By.xpath("//td[contains(@class,'ui-datepicker-days-cell')]")).get(i).getText();
-            if(day.equals("18"))
+        String day;
+        for(int i=0; i< num; i++) {
+            day = table.findElements(By.xpath("//td[contains(@class,'ui-datepicker-days-cell')]")).get(i).getText();
+            if (day.equals("18")) {
                 Driver.getDriver().findElements(By.xpath("//td[contains(@class,'ui-datepicker-days-cell')]")).get(i).click();
+                System.out.println(day);
+            }
         }
-
     }
 
     public void rsvp(){
         Select select = new Select(Driver.getDriver().findElement(By.cssSelector("select[id='edit-rsvp']")));
         select.selectByVisibleText("Only invitees can RSVP");
-
     }
 
 

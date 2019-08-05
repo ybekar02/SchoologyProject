@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dd87434-010b-4add-8bb8-7811241a50a8" name="Default Changelist" comment="" />
+    <list default="true" id="5dd87434-010b-4add-8bb8-7811241a50a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/pages/courses/CoursePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/pages/courses/CoursePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/pages/groups/CreateGroupsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/pages/groups/CreateGroupsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/pages/resources/AddResourcesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/pages/resources/AddResourcesPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/tests/courses/CoursesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/tests/courses/CoursesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/tests/groups/CreateGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/tests/groups/CreateGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/tests/home/EventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/tests/home/EventTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/tests/resources/AddResourcesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/tests/resources/AddResourcesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/SchoologyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/SchoologyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/pages/courses/CoursePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/pages/courses/CoursePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/pages/groups/CreateGroupsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/pages/groups/CreateGroupsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/pages/resources/AddResourcesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/pages/resources/AddResourcesPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/courses/CoursesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/courses/CoursesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/groups/CreateGroupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/groups/CreateGroupTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/home/EventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/home/EventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/resources/AddResourcesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/resources/AddResourcesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/SchoologyUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/SchoologyUtils$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/SchoologyUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/SchoologyUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,17 +74,69 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.UpdatePostTest">
-    <configuration name="EventTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AddResourcesTest">
+    <configuration name="AddResourcesTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SchoologyProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.schoology.tests.home.*" />
+          <option name="PATTERN" value="com.schoology.tests.resources.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.schoology.tests.home" />
-      <option name="MAIN_CLASS_NAME" value="com.schoology.tests.home.EventTest" />
+      <option name="PACKAGE_NAME" value="com.schoology.tests.resources" />
+      <option name="MAIN_CLASS_NAME" value="com.schoology.tests.resources.AddResourcesTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoursesTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SchoologyProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.schoology.tests.courses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.schoology.tests.courses" />
+      <option name="MAIN_CLASS_NAME" value="com.schoology.tests.courses.CoursesTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoursesTest.test2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SchoologyProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.schoology.tests.courses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.schoology.tests.courses" />
+      <option name="MAIN_CLASS_NAME" value="com.schoology.tests.courses.CoursesTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateGroupTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SchoologyProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.schoology.tests.groups.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.schoology.tests.groups" />
+      <option name="MAIN_CLASS_NAME" value="com.schoology.tests.groups.CreateGroupTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -88,66 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTest.logOnPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SchoologyProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.schoology.tests.home.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.schoology.tests.home" />
-      <option name="MAIN_CLASS_NAME" value="com.schoology.tests.home.HomeTest" />
-      <option name="METHOD_NAME" value="logOnPage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.loginNegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SchoologyProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.schoology.tests.login.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.login" />
-      <option name="MAIN_CLASS_NAME" value="com.schoology.tests.login.LoginTest" />
-      <option name="METHOD_NAME" value="loginNegativeTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UpdatePostTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SchoologyProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.schoology.tests.home.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.schoology.tests.home" />
-      <option name="MAIN_CLASS_NAME" value="com.schoology.tests.home.UpdatePostTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.UpdatePostTest" />
-        <item itemvalue="TestNG.HomeTest.logOnPage" />
-        <item itemvalue="TestNG.EventTest" />
+        <item itemvalue="TestNG.AddResourcesTest" />
+        <item itemvalue="TestNG.CreateGroupTest" />
+        <item itemvalue="TestNG.CoursesTest" />
+        <item itemvalue="TestNG.CoursesTest.test2" />
         <item itemvalue="TestNG.EventTest.eventTest" />
-        <item itemvalue="TestNG.LoginTest.loginNegativeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564791630192</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Developed version 2.0&#10;Added pages and tests of Event and Post.">
+      <created>1564792033860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564792033860</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

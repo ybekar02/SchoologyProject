@@ -26,10 +26,12 @@ public class TestBase {
     @BeforeTest
     public void testSetup(){
         report = new ExtentReports();
-        String pathToReport = System.getProperty("user.dir") + "/test-output/report.html";
+        String pathToReport = (System.getProperty("user.dir") + "/test-output/report.html");
         htmlReporter = new ExtentHtmlReporter(pathToReport);
         report.attachReporter(htmlReporter);
         report.setSystemInfo("OS", System.getProperty("os.name"));
+        report.setSystemInfo("Environment", "Extent Reports with Selenium WebDriver");
+        report.setSystemInfo("QA Engineer:", " Yasin Bekar");
         htmlReporter.config().setDocumentTitle("Schoology Automation  Project ");
     }
 
