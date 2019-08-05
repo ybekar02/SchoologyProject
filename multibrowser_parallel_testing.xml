@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="schoology Automation Smoke Tests" verbose="2" parallel="classes" thread-count="2">
+    <test name="Login tests using chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <packages>
+            <package name="com.schoology.tests.home"></package>
+        </packages>
+    </test>
+    <test name="Login tests using firefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <packages>
+            <package name="com.schoology.tests.home"></package>
+        </packages>
+    </test>
+</suite>

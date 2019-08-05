@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Home Page Tests">
+    <test name="Home Page Tests">
+        <classes>
+            <class name="com.schoology.tests.home.EventTest"/>
+            <class name="com.schoology.tests.home.HomeTest"/>
+            <class name="com.schoology.tests.home.UpdatePostTest"/>
+        </classes>
+    </test>
+
+</suite>

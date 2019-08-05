@@ -18,7 +18,6 @@ public class SchoologyUtils {
 
     /**
      * Login into vytrack application
-     * @param driver
      * @param username
      * @param password
      */
