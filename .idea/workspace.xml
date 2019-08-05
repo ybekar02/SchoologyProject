@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd87434-010b-4add-8bb8-7811241a50a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/multibrowser_parallel_testing.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smoketest_home.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/SchoologyUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/SchoologyUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/SchoologyUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/SchoologyUtils$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/SchoologyUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/SchoologyUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multibrowser_parallel_testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/multibrowser_testing.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/Driver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/TestBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
     </list>
@@ -168,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564968845912</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Developed version 2.0&#10;Added pages and tests of Event and Post.">
+      <created>1565023432459</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565023432459</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

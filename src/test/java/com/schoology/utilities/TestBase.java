@@ -3,68 +3,66 @@ package com.schoology.utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.schoology.utilities.ConfigurationReader;
+import com.schoology.utilities.Driver;
+import com.schoology.utilities.SchoologyUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class TestBase {
-
-    public WebDriver driver;
-    public Actions action;
-
-    protected ExtentReports report;
-    protected ExtentHtmlReporter htmlReporter;
-    protected ExtentTest extentLogger;
-
-    @BeforeTest
-    public void testSetup(){
-        report = new ExtentReports();
-        String pathToReport = (System.getProperty("user.dir") + "/test-output/report.html");
-        htmlReporter = new ExtentHtmlReporter(pathToReport);
+public abstract class TestBase {  //abstract because we dont want instance from this class
+    protected WebDriver driver;
+    protected Actions actions;
+    protected SoftAssert softAssert;
+    protected WebDriverWait wait;
+    //protected Pages pages;
+    protected static ExtentReports report;
+    private static ExtentHtmlReporter htmlReporter;
+    protected static ExtentTest extentLogger;
+    @Parameters("browser")
+    @BeforeMethod(alwaysRun = true)
+    public void setUpMethod(@Optional String browser){
+        driver=Driver.getDriver(browser);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        softAssert=new SoftAssert();
+        actions=new Actions(driver);
+        wait=new WebDriverWait(driver,10);
+        //pages=new Pages();
+        driver.get(ConfigurationReader.getProperty("url"));
+    }
+    @AfterMethod(alwaysRun = true)
+    public void tearDownMethod(ITestResult result) throws IOException {
+        if(result.getStatus()==ITestResult.FAILURE){
+            String screenshotLocation= SchoologyUtils.getScreenshot(result.getName());
+            extentLogger.fail(result.getName());
+            extentLogger.addScreenCaptureFromPath(screenshotLocation);
+            extentLogger.fail(result.getThrowable());
+        }
+        else if (result.getStatus()==ITestResult.SKIP){
+            extentLogger.skip("Test Case Skipped: "+result.getName());
+        }
+        Driver.closeDriver();
+        softAssert.assertAll();
+    }
+    @BeforeTest(alwaysRun = true)
+    public void setUpTest(){
+        report =new ExtentReports();
+        String filePath=System.getProperty("user.dir")+"/test-output/report.html";
+        htmlReporter=new ExtentHtmlReporter(filePath);
         report.attachReporter(htmlReporter);
-        report.setSystemInfo("OS", System.getProperty("os.name"));
+        report.setSystemInfo("Browser", ConfigurationReader.getProperty("browser"));
         report.setSystemInfo("Environment", "Extent Reports with Selenium WebDriver");
         report.setSystemInfo("QA Engineer:", " Yasin Bekar");
         htmlReporter.config().setDocumentTitle("Schoology Automation  Project ");
     }
-
-    @BeforeMethod
-    public void  setup(){
-        driver = Driver.getDriver();
-        action = new Actions(driver);
-        driver .manage().timeouts().implicitlyWait(Long.valueOf(ConfigurationReader.getProperty("implicitwait")), TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        driver.get(ConfigurationReader.getProperty("url"));
-
-    }
-
-    @AfterMethod
-    public void tearDown(ITestResult result){
-        if(ITestResult.FAILURE == result.getStatus()){
-            String pathToTheScreenshot = SchoologyUtils.getScreenshot(result.getName());
-            extentLogger.fail(result.getName());
-            try{
-               extentLogger.addScreenCaptureFromPath(pathToTheScreenshot);
-            }catch(IOException e){
-                e.printStackTrace();
-            }
-            extentLogger.fail(result.getThrowable());
-        }else if(result.getStatus() == ITestResult.SKIP){
-            extentLogger.skip("Tes case skipped " + result.getName());
-        }
-        Driver.closeDriver();
-    }
-
-    @AfterTest
-    public void tearDownTest(){
-       //Flush method is used to erase any previous data on the report and create a new report.
+    @AfterTest(alwaysRun = true)
+    public void endReport() {
         report.flush();
     }
 }
