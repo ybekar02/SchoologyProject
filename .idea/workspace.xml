@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd87434-010b-4add-8bb8-7811241a50a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/websitetest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multibrowser_parallel_testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/multibrowser_testing.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/utilities/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/schoology/tests/courses/CoursesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/schoology/tests/courses/CoursesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/courses/CoursesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/courses/CoursesTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/groups/CreateGroupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/groups/CreateGroupTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/home/EventTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/home/EventTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/home/HomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/home/HomeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/home/UpdatePostTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/home/UpdatePostTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/login/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/login/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/resources/AddResourcesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/tests/resources/AddResourcesTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/schoology/utilities/TestBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
     </list>
@@ -43,10 +48,16 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-output/Screenshots" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test-output/Screenshots" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -60,25 +71,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/yasinbekar/IdeaProjects/SchoologyProject/smoketest_home.xml">
-    <configuration name="AddResourcesTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG./Users/yasinbekar/IdeaProjects/SchoologyProject/websitetest.xml">
+    <configuration name="CoursesTest.courseMaterials" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SchoologyProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.schoology.tests.resources.*" />
+          <option name="PATTERN" value="com.schoology.tests.courses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.schoology.tests.resources" />
-      <option name="MAIN_CLASS_NAME" value="com.schoology.tests.resources.AddResourcesTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="com.schoology.tests.courses" />
+      <option name="MAIN_CLASS_NAME" value="com.schoology.tests.courses.CoursesTest" />
+      <option name="METHOD_NAME" value="courseMaterials" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateGroupTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateGroupTest.group" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SchoologyProject" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +100,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.schoology.tests.groups" />
       <option name="MAIN_CLASS_NAME" value="com.schoology.tests.groups.CreateGroupTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="group" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -115,9 +128,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/yasinbekar/IdeaProjects/SchoologyProject/smoketest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="/Users/yasinbekar/IdeaProjects/SchoologyProject/websitetest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SchoologyProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/smoketest.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/websitetest.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -127,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./Users/yasinbekar/IdeaProjects/SchoologyProject/websitetest.xml" />
+        <item itemvalue="TestNG.CoursesTest.courseMaterials" />
+        <item itemvalue="TestNG.CreateGroupTest.group" />
         <item itemvalue="TestNG./Users/yasinbekar/IdeaProjects/SchoologyProject/smoketest_home.xml" />
         <item itemvalue="TestNG./Users/yasinbekar/IdeaProjects/SchoologyProject/multibrowser_parallel_testing.xml" />
-        <item itemvalue="TestNG./Users/yasinbekar/IdeaProjects/SchoologyProject/smoketest.xml" />
-        <item itemvalue="TestNG.AddResourcesTest" />
-        <item itemvalue="TestNG.CreateGroupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565023432459</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Developed version 2.0&#10;Added pages and tests of Event and Post.">
+      <created>1565037137276</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565037137276</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
