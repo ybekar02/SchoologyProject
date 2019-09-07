@@ -22,7 +22,7 @@ public class CoursePage {
     @FindBy(css = "li[role='menuitem'] li[class*='leaf'] > div > a[href*='attendance']")
     public WebElement attendanceElement;
 
-    @FindBy(id= "attendance-taken-status-sunday")
+    @FindBy(id= "attendance-taken-status-tuesday")
     public WebElement takeAttendenaceButtonElement;
 
     @FindBy(id = "edit-submit")

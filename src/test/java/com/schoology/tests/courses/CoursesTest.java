@@ -28,8 +28,9 @@ public class CoursesTest extends TestBase {
         coursePage.courseMaterials();
         coursePage.attendanceElement.click();
         coursePage.takeAttendenaceButtonElement.click();
-//        String attendance = Driver.getDriver().findElement(By.id("attendance-taken-status-sunday")).getText();
-//        Assert.assertEquals(attendance, "Saved");
+        String attendance = Driver.getDriver().findElement(By.xpath("//td[@id='attendance-taken-status-tuesday'] //span[text()='Saved']")).getText();
+        Assert.assertEquals(attendance, "Saved");
+        System.out.println(attendance);
         coursePage.saveChangesButtonElement.click();
 
         extentLogger.pass("Successfully searched and picked course materials, as well as attendance is taken");

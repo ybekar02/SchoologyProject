@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-08-06T04:16:31Z" name="com.schoology.tests.login.LoginTest" finished-at="2019-08-06T04:16:38Z" duration-ms="7353">
+    <groups>
+    </groups>
+    <test started-at="2019-08-06T04:16:31Z" name="Command line test" finished-at="2019-08-06T04:16:38Z" duration-ms="7353">
+      <class name="com.schoology.tests.login.LoginTest">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:com.schoology.tests.login.LoginTest@1786dec2]" started-at="2019-08-06T04:16:31Z" name="setUpTest" finished-at="2019-08-06T04:16:31Z" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="setUpMethod(java.lang.String)[pri:0, instance:com.schoology.tests.login.LoginTest@1786dec2]" started-at="2019-08-06T04:16:31Z" name="setUpMethod" finished-at="2019-08-06T04:16:34Z" duration-ms="2654" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="loginNegativeTest()[pri:0, instance:com.schoology.tests.login.LoginTest@1786dec2]" started-at="2019-08-06T04:16:34Z" name="loginNegativeTest" finished-at="2019-08-06T04:16:34Z" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNegativeTest -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.schoology.tests.login.LoginTest@1786dec2]" started-at="2019-08-06T04:16:34Z" name="tearDownMethod" finished-at="2019-08-06T04:16:34Z" duration-ms="88" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginNegativeTest status=SUCCESS method=LoginTest.loginNegativeTest()[pri:0, instance:com.schoology.tests.login.LoginTest@1786dec2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod(java.lang.String)[pri:0, instance:com.schoology.tests.login.LoginTest@1786dec2]" started-at="2019-08-06T04:16:34Z" name="setUpMethod" finished-at="2019-08-06T04:16:36Z" duration-ms="1674" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="loginTest()[pri:0, instance:com.schoology.tests.login.LoginTest@1786dec2]" started-at="2019-08-06T04:16:36Z" name="loginTest" finished-at="2019-08-06T04:16:38Z" duration-ms="1957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.schoology.tests.login.LoginTest@1786dec2]" started-at="2019-08-06T04:16:38Z" name="tearDownMethod" finished-at="2019-08-06T04:16:38Z" duration-ms="101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest()[pri:0, instance:com.schoology.tests.login.LoginTest@1786dec2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.schoology.tests.login.LoginTest@1786dec2]" started-at="2019-08-06T04:16:38Z" name="endReport" finished-at="2019-08-06T04:16:38Z" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.schoology.tests.login.LoginTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.schoology.tests.login.LoginTest -->
+</testng-results>

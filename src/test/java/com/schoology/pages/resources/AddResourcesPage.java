@@ -27,8 +27,4 @@ public class AddResourcesPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-
-
-
-
 }

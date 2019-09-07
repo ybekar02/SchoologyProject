@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="com.schoology.tests.resources.AddResourcesTest">
+        <methods>
+          <include name="resources"/>
+          <include name="setUpTest"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.schoology.tests.resources.AddResourcesTest -->
+      <class name="com.schoology.tests.home.UpdatePostTest">
+        <methods>
+          <include name="setUpTest"/>
+          <include name="postUpdate"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.schoology.tests.home.UpdatePostTest -->
+      <class name="com.schoology.tests.courses.CoursesTest">
+        <methods>
+          <include name="courseMaterials"/>
+          <include name="setUpTest"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.schoology.tests.courses.CoursesTest -->
+      <class name="com.schoology.tests.groups.CreateGroupTest">
+        <methods>
+          <include name="group"/>
+          <include name="setUpTest"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- com.schoology.tests.groups.CreateGroupTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

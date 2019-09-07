@@ -2,9 +2,16 @@
 <suite name="Home Page Tests">
     <test name="Home Page Tests">
         <classes>
-            <class name="com.schoology.tests.home.EventTest"/>
+
+            <class name="com.schoology.tests.home.EventTest">
+            <methods>
+                <exclude name="eventTest"/>
+            </methods>
+            </class>
             <class name="com.schoology.tests.home.HomeTest"/>
             <class name="com.schoology.tests.home.UpdatePostTest"/>
+            <class name="com.schoology.tests.login.LoginTest"/>
+            <class name="com.schoology.tests.resources.AddResourcesTest"/>
         </classes>
     </test>
 
